@@ -1,19 +1,17 @@
 
-/* SEZIONE SPORT */
-.sport-video, .sport-news {
+.sport-intro {
+  margin: 40px 0;
+}
+
+.sport-block {
   margin: 40px 0;
   padding: 20px;
   background: #f7f7f7;
   border-radius: 8px;
 }
 
-.sport-video h2,
-.sport-news h2 {
-  margin-bottom: 10px;
-}
-
 .sport-disclaimer {
   font-size: 14px;
   color: #555;
-  margin-top: 20px;
+  margin: 30px 0;
 }
