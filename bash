@@ -7,4 +7,5 @@
 ├── gioco-responsabile.html
 ├── chi-siamo.html
 ├── privacy-cookie.html
+├── assets/images
 └── style.css
