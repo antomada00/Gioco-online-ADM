@@ -21,4 +21,17 @@
   margin: 0;
   font-size: 18px;
 }
+/* ===== FIX IMMAGINI HOME - OVERRIDE FINALE ===== */
+
+.home-box {
+  overflow: hidden !important;
+  border-radius: 16px !important;
+}
+
+.home-box img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  display: block !important;
+}
 
