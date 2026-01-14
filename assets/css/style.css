@@ -97,3 +97,26 @@ footer{background:#111;color:#fff;text-align:center;padding:25px;font-size:14px}
   object-fit: cover;
   display: block;
 }
+/* ================================
+   FIX DEFINITIVO ASSOLUTO IMMAGINI
+================================ */
+
+.home-box {
+  width: 100% !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  background: #fff !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15) !important;
+}
+
+.home-box img {
+  width: 100% !important;
+  height: 200px !important;
+  max-width: 100% !important;
+  max-height: 200px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
