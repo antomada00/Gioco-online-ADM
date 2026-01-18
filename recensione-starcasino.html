@@ -72,11 +72,32 @@ invito al gioco.
    rel="nofollow sponsored"
   rel="nofollow sponsored"
    class="aff-link"
-   data-bookmaker="Netbet">
+   data-bookmaker="StarCasinò">
 Visita il sito ufficiale StarCasinò Bet     <small style="display:block;margin-top:5px;color:#666;">
 Deposito minimo 20€ • 18+ • Gioca responsabilmente
 </small>
 </a>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const affLinks = document.querySelectorAll('.aff-link');
+  console.log('Link affiliati trovati:', affLinks.length);
+
+  affLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+
+      const bookmaker = this.dataset.bookmaker || 'non_specificato';
+
+      gtag('event', 'click_affiliato', {
+        bookmaker: bookmaker
+      });
+
+      console.log('CLICK AFFILIATO:', bookmaker);
+    });
+  });
+
+});
+</script>
 
 </main>
 
