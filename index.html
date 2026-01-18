@@ -144,13 +144,26 @@ gtag('config', 'G-VBXL1E3G27', {
 </section>
 <footer>18+ | Gioca responsabilmente | Solo casinò ADM</footer>
   <section style="padding:40px; background:#f5f5f5">
-    <script>
-document.querySelectorAll('.aff-link').forEach(link => {
-  link.addEventListener('click', function() {
-    gtag('event', 'click_affiliato', {
-      bookmaker: this.dataset.bookmaker
+   <script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  const affLinks = document.querySelectorAll('.aff-link');
+  console.log('Link affiliati trovati:', affLinks.length);
+
+  affLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+
+      const bookmaker = this.dataset.bookmaker || 'non_specificato';
+
+      gtag('event', 'click_affiliato', {
+        bookmaker: bookmaker
+      });
+
+      console.log('CLICK AFFILIATO:', bookmaker);
     });
   });
+
 });
 </script>
+
 </body></html>
